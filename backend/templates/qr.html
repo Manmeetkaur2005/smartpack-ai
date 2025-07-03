@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code Page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>QR Code Generator</h1>
+    <p>This page is for displaying QR codes.</p>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?data=example" alt="QR Code">
+  </div>
+</body>
+</html>

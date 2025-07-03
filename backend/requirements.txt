@@ -1,0 +1,8 @@
+Flask==2.3.2
+Flask-Cors==4.0.0
+qrcode==7.4.2
+pillow==10.2.0
+SQLAlchemy==2.0.30
+# Optional extras:
+py3dbp==0.1.4       # For real 3D bin packing (future use)
+openai==1.25.0      # For chatbot upgrade with GPT
