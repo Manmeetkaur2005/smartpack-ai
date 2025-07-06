@@ -8,29 +8,36 @@
 <style>
  body {
   margin: 0;
-  background: linear-gradient(to bottom right, #1a1a1a, #000);
-  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
-  background-color: #1a1a1a;
-  color: white;
+  background: linear-gradient(to bottom right, #f0e8e8, #eae4e4);
+ background-size: 100%; 
+     background: #3ca9e4;
+ 
+  color: rgb(29, 28, 28);
   font-family: 'Segoe UI', sans-serif;
-  padding:20px;
+  padding:auto;
+
 }
 
     header {
       text-align: center;
-      margin-bottom: 60px;
+      margin-bottom: 50px;
     }
+    
     header h1 {
+      color: rgb(57, 149, 241);
       font-size: 3rem;
     }
     header p {
       font-size: 1.2rem;
-      color: #ccc;
-      max-width: 600px;
+      border-radius: 60% ;
+      margin-bottom:auto;
+      max-width:auto;
+      color: #3d464a;
       margin: 0 auto;
+      text-align: center;
     }
     .btn {
-      background: rgb(36, 151, 151);
+      background: rgba(40, 102, 157, 0.978);
       border: none;
       color: white;
       padding: 10px 20px;
@@ -47,30 +54,30 @@
       margin-bottom: 80px;
     }
     .card {
-      background: #364852;
+     background: #42aae1;
       padding: 20px;
       border-radius: 10px;
       width: 300px;
-      box-shadow: 0 4px 12px rgba(95, 94, 94, 0.5);
+      box-shadow: 0 4px 12px rgba(111, 104, 104, 0.5);
     }
     .card h2 {
       font-size: 1.5rem;
       margin-bottom: 10px;
     }
     .card p {
-      color: #aaa8a8;
+      color: #f3f0f0;
     }
     .chatbot {
       text-align: center;
       margin-bottom: 80px;
     }
     .chatbox {
-      background:  #364852;
+     background: #42aae1;
       max-width: 350px;
       margin: 0 auto;
       padding: 40px;
       border-radius: 15px;
-      box-shadow: 0 4px 13px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 4px 13px rgba(238, 230, 230, 0.5);
     }
     .chatbox input, .chatbox textarea {
       width: 100%;
@@ -78,16 +85,27 @@
       margin-bottom: 10px;
       border: none;
       border-radius: 10px;
-      background: #283238;
+      background: #8fccf3;
       color: white;
       
     }
-   
+
+   .transparent-background {
+  background-color: rgba(252, 252, 63, 0.929);
+  padding: 40px;
+  border-radius: 15px;
+  width: 80%;
+  margin: 50px auto;
+  color: #000;
+  text-align: center;
+  backdrop-filter: blur(4px); 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
     
     .chatbox button {
       width: 105%;
       padding: 10px;
-      background: rgb(36, 151, 151);
+      background: rgba(40, 102, 157, 0.978);
       border: none;
       border-radius: 10px;
       color: white;
@@ -96,15 +114,16 @@
     }
     footer {
       text-align: center;
-      color: #beb9b9;
+      color: #f8f3f3;
       font-size: 0.8rem;
     }
   </style>
 </head>
 <body>
+  <div class="transparent-background">
   <header>
     <h1>SmartPack AI</h1>
-    <p>Revolutionize your packaging with our intelligent AI solutions. Optimize cost, speed, and sustainability.</p>
+    <p >Revolutionize your packaging with our intelligent AI solutions. Optimize cost, speed, and sustainability.</p>
     <button class="btn">Get Started</button>
   </header>
 
@@ -134,12 +153,12 @@
       <button>Send</button>
     </div>
   </section>
+</div>
 
   <footer>
     © 2025 SmartPack AI. All rights reserved.
   </footer>
  
-
 </body>
     <!-- Correct links to dashboard and chatbot pages 
     <a href="{{ url_for('dashboard') }}" class="btn">Go to Dashboard</a>
