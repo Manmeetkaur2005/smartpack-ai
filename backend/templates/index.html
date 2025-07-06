@@ -5,15 +5,145 @@
   <title>SmartPack AI - Home</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body>
-  <div class="container">
-    <h1>Welcome to SmartPack AI</h1>
-    <p>Optimize your packaging with AI assistance.</p>
+<style>
+ body {
+  margin: 0;
+  background: linear-gradient(to bottom right, #1a1a1a, #000);
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+  background-color: #1a1a1a;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  padding:20px;
+}
 
-    <!-- Correct links to dashboard and chatbot pages -->
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    header h1 {
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .btn {
+      background: rgb(36, 151, 151);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 80px;
+    }
+    .card {
+      background: #364852;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 4px 12px rgba(95, 94, 94, 0.5);
+    }
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .card p {
+      color: #aaa8a8;
+    }
+    .chatbot {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+    .chatbox {
+      background:  #364852;
+      max-width: 350px;
+      margin: 0 auto;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 13px rgba(0, 0, 0, 0.5);
+    }
+    .chatbox input, .chatbox textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 10px;
+      background: #283238;
+      color: white;
+      
+    }
+   
+    
+    .chatbox button {
+      width: 105%;
+      padding: 10px;
+      background: rgb(36, 151, 151);
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      align-self: center;
+    }
+    footer {
+      text-align: center;
+      color: #beb9b9;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SmartPack AI</h1>
+    <p>Revolutionize your packaging with our intelligent AI solutions. Optimize cost, speed, and sustainability.</p>
+    <button class="btn">Get Started</button>
+  </header>
+
+  <section class="features">
+    <div class="card">
+      <h2>AI-Powered Insights ֎🇦🇮 </h2>
+      <p>Use machine learning to analyze packaging efficiency, reduce waste, and predict logistics demand.</p>
+    </div>
+    <div class="card">
+      <h2>Smart Automation 📦</h2>
+      <p>Automate packaging decisions with real-time data integration from your supply chain.</p>
+    </div>
+    <div class="card">
+      <h2>Sustainable Future 🌱</h2>
+      <p>Reduce environmental impact by optimizing materials and energy use with our AI suggestions.</p>
+    </div>
+    <div class="card">
+    <h2> Live Tracker 📍</h2>
+    <p>Enhance security and efficienct tracking till it reaches the destination.</p>
+    </div>
+  </section>
+
+  <section class="chatbot">
+    <h2>Talk to SmartPack AI Bot</h2>
+    <div class="chatbox">
+      <textarea placeholder="Ask me anything about packaging..."></textarea>
+      <button>Send</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 SmartPack AI. All rights reserved.
+  </footer>
+ 
+
+</body>
+    <!-- Correct links to dashboard and chatbot pages 
     <a href="{{ url_for('dashboard') }}" class="btn">Go to Dashboard</a>
     <a href="{{ url_for('chatbot') }}" class="btn">Go to Chatbot</a>
-    <a href="{{url_for('qr_page')}}" class="btn">Generate QR</a>
+    <a href="{{url_for('qr_page')}}" class="btn">Generate QR</a>-->
   <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
-</body>
 </html>
